@@ -1,0 +1,6 @@
+framework module Pods_MMRequest_Example {
+  umbrella header "Pods-MMRequest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

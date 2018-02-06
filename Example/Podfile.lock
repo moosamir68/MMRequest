@@ -1,0 +1,16 @@
+PODS:
+  - MMRequest (0.1.0)
+
+DEPENDENCIES:
+  - MMRequest (from `../`)
+
+EXTERNAL SOURCES:
+  MMRequest:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MMRequest: 3687dc0588cc988c81a30bba1e49473f9ad0cb30
+
+PODFILE CHECKSUM: eba8ff79142b9df45680b5c424afe610302ce2d4
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,6 @@
+framework module MMRequest {
+  umbrella header "MMRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

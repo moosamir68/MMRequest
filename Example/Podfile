@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'MMRequest_Example' do
   pod 'MMRequest', :path => '../'
-
-  target 'MMRequest_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
