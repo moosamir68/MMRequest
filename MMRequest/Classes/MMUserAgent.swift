@@ -6,8 +6,8 @@
 //  Copyright © 2017 EnoOne. All rights reserved.
 //
 
-class MMUserAgent: NSObject {
-    static func userAgent() ->NSString{
+public class MMUserAgent: NSObject {
+    public static func userAgent() ->NSString{
         let version:NSString = (Bundle.main.infoDictionary! as NSDictionary).object(forKey: "CFBundleShortVersionString") as! NSString
         let build:NSString = (Bundle.main.infoDictionary! as NSDictionary).object(forKey: "CFBundleVersion") as! NSString
         let deviceModel:NSString = UIDevice.current.model as NSString
