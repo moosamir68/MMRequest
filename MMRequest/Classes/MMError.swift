@@ -66,14 +66,14 @@ public class MMError: NSObject {
         case .some(400):
             self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
             break
-        case .some(400):
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+        case .some(401):
+            self.errorDescription = "اطلاعات وارد شده اشتباه است"
             break
-        case .some(400):
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+        case .some(404):
+            self.errorDescription = "لطفا دوباره تلاش نمایید"
             break
-        case .some(400):
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+        case .some(500):
+            self.errorDescription = "لطفا دوباره تلاش نمایید"
             break
         case .some(400):
             self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
