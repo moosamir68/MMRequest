@@ -23,34 +23,34 @@ public class MMError: NSObject {
         
         switch error.code {
         case -1009:
-            self.errorDescription = "عدم دسترسی به اینترنت."
+            self.errorDescription = "Can not connect to internet"
             break
         case -1001:
-            self.errorDescription = "زمان درخواست به پایان رسید."
+            self.errorDescription = "Request time out"
             break
         case -1003:
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+            self.errorDescription = "Can not connect to server"
             break
         case 400:
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+            self.errorDescription = "Can not connect to server"
             break
         case 401:
-            self.errorDescription = error.localizedDescription
+            self.errorDescription = "Can not connect to server"
             break
         case 402:
-            self.errorDescription = error.localizedDescription
+            self.errorDescription = "Can not connect to server"
             break
         case 403:
-            self.errorDescription = error.localizedDescription
+            self.errorDescription = "Can not connect to server"
             break
         case 500:
-            self.errorDescription = error.localizedDescription
+            self.errorDescription = "Can not connect to server"
             break
         case 501:
-            self.errorDescription = error.localizedDescription
+            self.errorDescription = "Can not connect to server"
             break
         default:
-            self.errorDescription = error.localizedDescription
+            self.errorDescription = "Can not connect to server"
         }
         if errorDescription != nil {
             userInfoDIctionary?.setObject(errorDescription!, forKey: NSLocalizedDescriptionKey as NSCopying)
@@ -64,25 +64,22 @@ public class MMError: NSObject {
         self.errorCode = response?.statusCode
         switch statusCode {
         case .some(400):
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+            self.errorDescription = "Can not connect to server"
             break
         case .some(401):
-            self.errorDescription = "اطلاعات وارد شده اشتباه است"
+            self.errorDescription = "Can not connect to server"
             break
         case .some(404):
-            self.errorDescription = "لطفا دوباره تلاش نمایید"
+            self.errorDescription = "Can not connect to server"
             break
         case .some(500):
-            self.errorDescription = "لطفا دوباره تلاش نمایید"
+            self.errorDescription = "Can not connect to server"
             break
         case .some(400):
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
-            break
-        case .some(400):
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+            self.errorDescription = "Can not connect to server"
             break
         default:
-            self.errorDescription = "سروری با این اسم و مشخصات یافت نشد."
+            self.errorDescription = "Can not connect to server"
         }
     }
     
