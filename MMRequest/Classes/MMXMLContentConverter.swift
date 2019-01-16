@@ -9,10 +9,7 @@
 class MMXMLContentConverter: NSObject, MMConvertContent {
     func supportsContentType(contentType:NSString) ->Bool?
     {
-        if(contentType.caseInsensitiveCompare("application/xml") == .orderedSame){
-            return true
-        }
-        if(contentType.caseInsensitiveCompare("text/xml") == .orderedSame){
+        if(contentType.contains("application/xml") || contentType.contains("text/xml")){
             return true
         }
         

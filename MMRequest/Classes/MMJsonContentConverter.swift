@@ -10,7 +10,7 @@ class MMJsonContentConverter: NSObject, MMConvertContent {
     
     func supportsContentType(contentType:NSString) ->Bool?
     {
-        if(contentType.caseInsensitiveCompare("application/json") == .orderedSame){
+        if(contentType.contains("application/json")){
             return true
         }
         

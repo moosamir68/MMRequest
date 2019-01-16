@@ -10,7 +10,7 @@ class MMFormURLEncodedContentConverter: NSObject,MMConvertContent {
     
     func supportsContentType(contentType:NSString) ->Bool?
     {
-        if(contentType.caseInsensitiveCompare("application/x-www-form-urlencoded") == .orderedSame){
+        if(contentType.contains("application/x-www-form-urlencoded")){
             return true
         }
         

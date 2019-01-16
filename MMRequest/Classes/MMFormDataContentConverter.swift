@@ -10,7 +10,7 @@ class MMFormDataContentConverter: NSObject, MMConvertContent {
 
     func supportsContentType(contentType:NSString) ->Bool?
     {
-        if(contentType.caseInsensitiveCompare("application/form-data") == .orderedSame){
+        if(contentType.contains("application/form-data")){
             return true
         }
         
